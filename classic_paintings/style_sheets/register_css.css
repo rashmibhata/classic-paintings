@@ -1,0 +1,50 @@
+.ulogin{
+    height:200vh;
+    background-image: linear-gradient(rgba(255,255,255,.6), rgba(255,255,255,.6)),url("../images/home_page_images/about_image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.ulogin{
+    padding-top: 10%;
+    
+
+    
+}
+.lform{
+    font-family:monospace;
+    background-color: white;
+    padding: 3% 5%;
+    font-size: 1rem;
+    width:50%;
+    margin:0 auto;
+
+}
+.lform h1{
+    
+    font-style: bolder;
+ 
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2rem;
+    margin-bottom:6px;
+}
+.linput{
+margin-top:-1%;
+
+}
+.lform input{
+ font-size: 1rem;
+
+}
+.lform button{
+    margin:0 auto;
+    font-size:1rem;
+    align-self: center;
+    justify-content: center;
+    margin-left: 35%;
+    width:10rem;
+}
+

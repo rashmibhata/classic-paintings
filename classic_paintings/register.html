@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html >
+<head>
+    
+    <title>Classic Paintings</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" type="text/css" href="style_sheets/html_format_style.css">
+    <link rel="stylesheet" type="text/css" href="style_sheets/register_css.css">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+    <script src=”https://code.jquery.com/jquery-3.4.1.js" integrity=”sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=” crossorigin=”anonymous”></script>
+  <script src="js/validate.js"></script>
+   
+</head>
+<body>
+    
+<!--  Nav bar  -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light navBox">
+    <div class="container-fluid navImg">
+      <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navPageLinks" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"href="madhubani.html">Madhubani Paintings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="realistic.html">Realistic Paintings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stylized.html">Stylized Paintings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="ulogin">
+    <div class="container logindiv" >
+    <form class="lform" onsubmit="validate()" method="post"id="register_form" action="https://script.google.com/macros/s/AKfycby_ynAIG4z20pBVtzUoaFbR4OVH7plIUGZ0a2rjJ3zq1UKs6-HpCMkd6ePM2m-TmYRO/exec" >
+        <h1>REGISTER</h1><br><br>
+      <div class="linput">
+        <div class="mb-3">
+            <label for="validationCustom01" class="form-label">Name</label>
+            <input type="text" name="name" class="form-control" id="validationCustom01"  required>
+            <span id="errorname" style="font-size:12px;color:red"></span>
+            
+         
+          </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <span id="erroremail" style="font-size:12px;color:red"></span>
+        
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Enter Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name="pass1">
+          <span id="errorpass1" style="font-size:12px;color:red"></span>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword2" class="form-label">ReEnter Password</label>
+            <input type="password" name="pass2" class="form-control" id="exampleInputPassword2">
+          </div>
+          <span id="errorpass2" style="font-size:12px;color:red"></span>
+       <br><br>
+        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+        <button type="reset" class="btn btn-primary btn-block mb-4" onclick="erasefunc()">RESET</button>
+        <div class="text-center">
+          <p>Already Have An account? <a href="login.html">Login</a></p>
+          </div>
+        
+      </div>
+    </form>
+    </div>
+    
+    
+      </div>
+      </body>
+      </html>
+      <script>
+        window.addEventListener("load", function() {
+        const form = document.getElementById('register_form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            alert("Success!");
+          })
+        });
+      });
+      
+      </script>

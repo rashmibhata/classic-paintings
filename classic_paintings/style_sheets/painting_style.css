@@ -1,0 +1,35 @@
+.itemContainer {
+    background-color: white;
+    text-align: center;
+    margin: 3px 15%;
+}
+.itemContainer img {
+    width: 60%;    
+}
+.itemContainer h1 {
+    margin: 0;
+    padding-top: 10px;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: dimgrey;
+}
+.itemContainer p {
+    font-family:monospace;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: dimgrey;
+    padding: 0;
+    margin-top: 10px;
+}
+.lbtn{
+
+    margin-top: 30px ;
+    margin-bottom: 30px;
+    height: 40px ;
+    color: white;
+    font-size: 20px;
+
+}

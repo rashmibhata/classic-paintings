@@ -1,0 +1,40 @@
+.tableContainer {
+    background-color: white;
+    margin: 3px 15%;
+    padding: 2.5% 0;
+    text-align: center;
+}
+#header1 {    
+    font-family:monospace;
+    font-weight: 500;
+    font-size: 40px;
+    letter-spacing: 2px;    
+}
+td:hover {
+    box-shadow: 0 0 5px grey;
+}
+td img {
+    width: 80%;
+    margin: 30px 10px 0px 10px;
+}
+td h1 {    
+    font-family:monospace;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: dimgrey;
+    padding: 0;
+    margin: 0;
+}
+td p {    
+    font-family:monospace;
+    font-weight: 500;
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: dimgrey;
+    padding: 0;
+    margin-top: 10px;
+}
+td a {
+    text-decoration: none;
+}
